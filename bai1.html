@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let a = +prompt("Nhap vao mang mot phan tu");
+    let b = +prompt("Nhap vao mang mot phan tu");
+    let c = +prompt("Nhap vao mang mot phan tu");
+    let d = +prompt("Nhap vao mang mot phan tu");
+    let e = +prompt("Nhap vao mang mot phan tu");
+
+    let arr = [a, b, c, d, e];
+    for(let i =0;i<arr.length;i++){
+        if(isNaN(arr[i])){
+            console.log("Khong co so nguyen nao trong mang");
+            }else{
+            console.log(`Phan tu la so nguyen la arr[${i}]`,arr[i]);
+        }
+    }
+</script>
+</html>

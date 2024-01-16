@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let arr = [1,2,3,4,5,6];
+    let guess = +prompt("Nhap vao gia tri bat ky");
+    let found = false;
+    if(isNaN(guess)){
+        console.log("Gia tri nhap vao khong hop le");
+    }else{
+        for(let i =0;i<arr.length;i++){
+            if(guess === arr[i]){
+                console.log("Vi tri cua phan tu trong mang la",i);
+                found = true;
+                break;
+        }
+    }
+    if(!found){
+        console.log("Phan tu khong ton tai");
+    }
+}
+</script>
+</html>
